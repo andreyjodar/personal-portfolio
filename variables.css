@@ -1,0 +1,56 @@
+:root {
+    --first-color: #087F23;
+    --second-color: #141414;
+    --third-color: #111111;
+    --light-color: #f1f1f1;
+
+    --bg-body-color: var(--second-color);
+    --bg-second-color: var(--third-color);
+    --text-body-color: var(--light-color);
+    --text-bold-color: var(--first-color);
+
+    --bg-header-color: rgba(var(--third-color), 0.95);
+    --text-hover-header-color: var(--first-color);
+    --text-navigation-color: var(--light-color);
+
+    --bg-footer-color: var(--first-color);
+    --text-footer-color: var(--third-color);
+
+    --bg-button-color: var(--second-color);
+    --bg-hover-button-color: var(--first-color);
+    --text-button-color: var(--light-color);
+    --text-hover-button-color: var(--second-color);
+    --border-button: 3px solid var(--first-color);
+
+    --border-project-card: 2px solid var(--first-color);
+    --bg-hover-project-card-color: var(--first-color);
+    --text-hover-project-card-color: var(--third-color);
+
+    --bg-skills-color: var(--third-color);
+    --bg-skill-container-color: rgba(var(--first-color), 0.24);
+    --shadow-skill-card: 0px 5px 15px var(--first-color);
+
+    --bg-education-color: var(--third-color);
+    --bg-education-container-color: rgba(var(--first-color), 0.24);
+    --bg-education-card-color: var(--third-color);
+    --shadow-hover-education-card: 0px 5px 15px var(--first-color);
+
+    --border-input-textarea-container: 2px solid var(--first-color);
+    --text-input-textarea-container-color: var(--light-color);
+
+    --border-social: 2px solid var(--third-color);
+    --svg-social-color: var(--third-color);
+    --bg-hover-social-color: var(--third-color);
+    --svg-hover-social-color: var(--first-color);
+
+    --border-popup: 2px solid var(--first-color);
+    --shadow-popup: 0px 5px 15px var(--first-color);
+    --bg-popup-color: rgba(var(--second-color), 0.91);
+}
+
+[data-theme="ligth"] { 
+    --first-color: #005F73;
+    --second-color: #ECEBE5;
+    --third-color: #ABADAD;
+    --light-color: #1C231B;
+}
