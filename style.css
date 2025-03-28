@@ -298,8 +298,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 300px;
-    min-width: 260px;
+    width: 200px;
     margin: 0 auto;
     padding: 30px;
     background-color: #111111;
