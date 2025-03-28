@@ -142,7 +142,7 @@
 
         <section id="contact">
             <h1><span class="bold">Contact</span> Me</h1>
-            <form id="contact-form" method="POST"> <!-- contact form (action) -->
+            <form id="contact-form"> <!-- contact form (action) -->
                 <div class="input-container">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required/>
@@ -162,7 +162,7 @@
 
                 <input type="hidden" name="_captcha" value="false"> <!-- Block Captcha -->
                 <input type="hidden" name="_template" value="basic"> <!-- Email format -->
-                <input type="hidden" name="_next" value="#home"> <!-- Impede o Redirecionamento da API -->
+                <input type="hidden" name="_next" value=""> <!-- Impede o Redirecionamento da API -->
 
                 <button type="submit" class="button">Send Message</button>
             </form>
@@ -203,5 +203,6 @@
             <button class="button" onclick="closePopup()">OK</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
