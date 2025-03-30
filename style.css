@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
-@import url(variables.css);
+@import url('variables.css');
 
 body, html {
     height: 100%;
@@ -213,7 +213,7 @@ footer {
 }
 
 #skills {
-    background-color: #111111;
+    background-color: var(--bg-skills-color);
     padding-top: 3rem;
     padding-bottom: 8rem;
     align-items: center;

@@ -1,67 +1,109 @@
 :root {
-    --first-color: #087F23;
-    --first-alt-color: #087f243d;
-    --second-color: #141414;
-    --second-alt-color: #141414e7;
-    --third-color: #111111;
-    --third-alt-color: #111111f3;
-    --light-color: #f1f1f1;
+    /*color palette*/
+    --first-color: #6A994E; 
+    --first-alt-color: #6a994e69;
+    --second-color: #121212; 
+    --second-alt-color: #1E1E1E;
+    --third-color: #222831; 
+    --third-alt-color: #393E46;
+    --light-color: #E8E8E8; 
 
+    /*reference variables*/
+    /*background*/
     --bg-body-color: var(--second-color);
     --bg-second-color: var(--third-color);
-    --text-body-color: var(--light-color);
-    --text-bold-color: var(--first-color);
-
     --bg-header-color: var(--third-alt-color);
-    --text-hover-header-color: var(--first-color);
-    --text-navigation-color: var(--light-color);
-    --text-hover-navigation-color: var(--first-color);
-    --brand-icon-color: var(--first-color);
-
     --bg-home-color: var(--second-color);
-
     --bg-footer-color: var(--first-color);
-    --text-footer-color: var(--third-color);
-
     --bg-button-color: var(--second-color);
-    --bg-hover-button-color: var(--first-color);
-    --text-button-color: var(--light-color);
-    --text-hover-button-color: var(--second-color);
-    --border-button: 3px solid var(--first-color);
-
-    --border-project-card: 2px solid var(--first-color);
-    --bg-hover-project-card-color: var(--first-color);
-    --text-hover-project-card-color: var(--third-color);
-
-    --bg-skills-color: var(--third-color);
     --bg-skill-container-color: var(--first-alt-color);
+    --bg-skills-color: var(--third-color);
     --bg-skill-card-color: var(--third-color);
-    --shadow-hover-skill-card: 0px 5px 15px var(--first-color);
-
     --bg-education-color: var(--third-color);
     --bg-education-container-color: var(--first-alt-color);
     --bg-education-card-color: var(--third-color);
-    --shadow-hover-education-card: 0px 5px 15px var(--first-color);
-
-    --border-input-textarea-container: 2px solid var(--first-color);
-    --text-input-textarea-container-color: var(--light-color);
-
-    --border-social: 2px solid var(--third-color);
-    --svg-social-color: var(--third-color);
     --bg-hover-social-color: var(--third-color);
-    --svg-hover-social-color: var(--first-color);
-
-    --border-popup: 2px solid var(--first-color);
-    --shadow-popup: 0px 5px 15px var(--first-color);
     --bg-popup-color: var(--second-alt-color);
+    --bg-hover-button-color: var(--first-color);
+    --bg-hover-project-card-color: var(--first-color);
+    /*text*/
+    --text-body-color: var(--light-color);
+    --text-bold-color: var(--first-color);
+    --text-navigation-color: var(--light-color);
+    --text-footer-color: var(--third-color);
+    --text-button-color: var(--light-color);
+    --text-input-textarea-container-color: var(--light-color);
+    --text-hover-header-color: var(--first-color);
+    --text-hover-navigation-color: var(--first-color);
+    --text-hover-button-color: var(--second-color);
+    --text-hover-project-card-color: var(--third-color);
+    /*border*/
+    --border-button: 3px solid var(--first-color);
+    --border-project-card: 2px solid var(--first-color);
+    --border-input-textarea-container: 2px solid var(--first-color);
+    --border-social: 2px solid var(--third-color);
+    --border-popup: 2px solid var(--first-color);
+    /*svg and brand*/
+    --brand-icon-color: var(--first-color);
+    --svg-social-color: var(--third-color);
+    --svg-hover-social-color: var(--first-color);
+    /*box shadow*/
+    --shadow-popup: 0px 5px 15px var(--first-color);
+    --shadow-hover-skill-card: 0px 5px 15px var(--first-color);
+    --shadow-hover-education-card: 0px 5px 15px var(--first-color);
 }
 
-[data-theme="ligth"] { 
-    --first-color: #005F73;
-    --first-alt-color: #0060733d;
-    --second-color: #ECEBE5;
-    --second-alt-color: #ECEBE5e7;
-    --third-color: #ABADAD;
-    --third-alt-color: #ABADADf3;
-    --light-color: #1C231B;
+[data-theme="light"] { 
+    /*color palette*/
+    --first-color: #2D6A4F; 
+    --first-alt-color: #2D6A4F69;
+    --second-color: #F1F1F1; 
+    --second-alt-color: #E6E6E6E7; 
+    --third-color: #D9D9D9; 
+    --third-alt-color: #C4C4C4F3;
+    --light-color: #1C1C1C; 
+
+    /*reference variables*/
+    /*background*/
+    --bg-body-color: var(--second-color);
+    --bg-second-color: var(--third-color);
+    --bg-header-color: var(--third-alt-color);
+    --bg-home-color: var(--second-color);
+    --bg-footer-color: var(--first-color);
+    --bg-button-color: var(--second-color);
+    --bg-skill-container-color: var(--first-alt-color);
+    --bg-skills-color: var(--third-color);
+    --bg-skill-card-color: var(--third-color);
+    --bg-education-color: var(--third-color);
+    --bg-education-container-color: var(--first-alt-color);
+    --bg-education-card-color: var(--third-color);
+    --bg-hover-social-color: var(--third-color);
+    --bg-popup-color: var(--second-alt-color);
+    --bg-hover-button-color: var(--first-color);
+    --bg-hover-project-card-color: var(--first-color);
+    /*text*/
+    --text-body-color: var(--light-color);
+    --text-bold-color: var(--first-color);
+    --text-navigation-color: var(--light-color);
+    --text-footer-color: var(--third-color);
+    --text-button-color: var(--light-color);
+    --text-input-textarea-container-color: var(--light-color);
+    --text-hover-header-color: var(--first-color);
+    --text-hover-navigation-color: var(--first-color);
+    --text-hover-button-color: var(--second-color);
+    --text-hover-project-card-color: var(--third-color);
+    /*border*/
+    --border-button: 3px solid var(--first-color);
+    --border-project-card: 2px solid var(--first-color);
+    --border-input-textarea-container: 2px solid var(--first-color);
+    --border-social: 2px solid var(--third-color);
+    --border-popup: 2px solid var(--first-color);
+    /*svg and brand*/
+    --brand-icon-color: var(--first-color);
+    --svg-social-color: var(--third-color);
+    --svg-hover-social-color: var(--first-color);
+    /*box shadow*/
+    --shadow-popup: 0px 5px 15px var(--first-color);
+    --shadow-hover-skill-card: 0px 5px 15px var(--first-color);
+    --shadow-hover-education-card: 0px 5px 15px var(--first-color);
 }
