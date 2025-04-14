@@ -47,6 +47,8 @@
     --brand-icon-color: var(--first-color);
     --svg-social-color: var(--third-color);
     --svg-hover-social-color: var(--first-color);
+    --svg-config-icon-color: var(--light-color);
+    --border-config-button: 2px solid var(--light-color);
     /*box shadow*/
     --shadow-popup: 0px 5px 15px var(--first-color);
     --shadow-hover-skill-card: 0px 5px 15px var(--first-color);
@@ -93,7 +95,7 @@
     --text-hover-button-color: var(--second-color);
     --text-hover-project-card-color: var(--third-color);
     /*border*/
-    --border-button: 3px solid var(--first-color);
+    --border-button: 2px solid var(--first-color);
     --border-project-card: 2px solid var(--first-color);
     --border-input-textarea-container: 2px solid var(--first-color);
     --border-social: 2px solid var(--third-color);
@@ -102,6 +104,8 @@
     --brand-icon-color: var(--first-color);
     --svg-social-color: var(--third-color);
     --svg-hover-social-color: var(--first-color);
+    --svg-config-icon-color: var(--light-color);
+    --border-config-button: 2px solid var(--light-color);
     /*box shadow*/
     --shadow-popup: 0px 5px 15px var(--first-color);
     --shadow-hover-skill-card: 0px 5px 15px var(--first-color);

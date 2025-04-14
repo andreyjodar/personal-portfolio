@@ -1,3 +1,7 @@
+window.addEventListener("DOMContentLoaded", () => {
+    loadIdiom(currentIdiom);    
+});
+
 window.onload = function() {
     document.getElementById("contact-form").onsubmit = function (event) {
         event.preventDefault();
@@ -24,10 +28,11 @@ function closePopup() {
     document.getElementById("popup").style.display="none";
 }
 
-let currentIdiom = "en";
+let currentIdiom = localStorage.getItem("language") || "en";
 
 function changeIdiom() {
     currentIdiom = currentIdiom == "en" ? "pt" : "en";
+    localStorage.setItem("language", currentIdiom);
     loadIdiom(currentIdiom);
 }
 
@@ -46,12 +51,18 @@ function translatePage(language) {
             element.textContent = language[key];
         }
     });
+
+    document.querySelectorAll("[data-i18n-html]").forEach(element => {
+        const key = element.getAttribute("data-i18n-html");
+        if(language[key]) {
+            element.innerHTML = language[key];
+        }
+    });
 }
 
 function changeTheme() {
     const theme = document.body.getAttribute("data-theme");
     const newTheme = theme == "dark" ? "light" : "dark";
     document.body.setAttribute("data-theme", newTheme);
-    const btChangeTheme = document.getElementById("change-theme");
-    btChangeTheme.textContent = theme == "dark" ? "Dark" : "Light";
+    localStorage.setItem("theme", newTheme);
 }
