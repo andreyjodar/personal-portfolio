@@ -13,16 +13,19 @@
 <body data-theme="dark">
     <header>
         <div class="header-container">
-            <a href="#home" class="brand-icon">Jodar</a>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#home" data-i18n="home-header">Home</a></li>
-                    <li><a href="#projects" data-i18n="projects-header">Projects</a></li>
-                    <li><a href="#skills" data-i18n="skills-header">Skills</a></li>
-                    <li><a href="#education" data-i18n="education-header">Education</a></li>
-                    <li><a href="#contact" data-i18n="contact-header">Contact</a></li>
-                </ul>
-            </nav>
+            <div class = "nav-container">
+                <nav class="navigation">
+                    <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">☰</button>
+                    <ul class="menu">
+                        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                        <li><a href="#education" onclick="closeMenu()">Education</a></li>
+                        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#home" class="brand-icon">Jodar</a>
+            </div>
             <div class="config">
                 <button id="change-theme" class="theme-button" onclick="changeTheme()">
                     <span id="sun-icon" class="theme-icon">

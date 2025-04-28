@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
-    loadIdiom(currentIdiom);    
+    loadIdiom(currentIdiom);
+    loadTheme(currentTheme); 
 });
 
 window.onload = function() {
@@ -60,9 +61,29 @@ function translatePage(language) {
     });
 }
 
+let currentTheme = localStorage.getItem("theme") || "dark";
+
 function changeTheme() {
-    const theme = document.body.getAttribute("data-theme");
-    const newTheme = theme == "dark" ? "light" : "dark";
-    document.body.setAttribute("data-theme", newTheme);
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
     localStorage.setItem("theme", newTheme);
+    loadTheme(newTheme);
+}
+
+function loadTheme(theme) {
+    currentTheme = theme;
+    document.body.setAttribute("data-theme", currentTheme);
+}
+
+function toggleMenu() {
+    const menu = document.querySelector(".menu");
+    const overlay = document.querySelector(".overlay");
+    menu.classList.toggle("show");
+    overlay.classList.toggle("show");
+}
+
+function closeMenu() {
+    const menu = document.querySelector(".menu");
+    const overlay = document.querySelector(".overlay");
+    menu.classList.remove("show");
+    overlay.classList.remove("show");
 }
